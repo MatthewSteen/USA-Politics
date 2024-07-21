@@ -2,9 +2,6 @@
 name: continuous deployment
 
 on:
-  pull_request:
-    branches:
-    - main
   push:
     branches:
     - main
@@ -30,7 +27,6 @@ jobs:
 
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v4
-      if: ${{ github.ref == 'refs/heads/main' }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/html
