@@ -1,5 +1,5 @@
 # https://github.com/executablebooks/github-action-demo/blob/master/.github/workflows/book.yml
-name: deploy-book
+name: continuous deployment
 
 on:
   push:
