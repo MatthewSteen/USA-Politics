@@ -6,4 +6,4 @@ root: README
 parts:
 - caption: Energy
   chapters:
-  - file: energy/
+  - file: energy/independence/energy_independence.ipynb
