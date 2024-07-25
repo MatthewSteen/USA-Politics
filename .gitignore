@@ -1,0 +1,14 @@
+# https://github.com/github/gitignore/blob/main/Python.gitignore
+
+# Sphinx documentation
+_build/
+
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+
+# Environments
+.venv
