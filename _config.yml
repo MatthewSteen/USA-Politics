@@ -50,13 +50,13 @@ parse:
 # HTML-specific settings
 html:
   favicon                   : ""  # A path to a favicon image
-  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  use_repository_button     : true
-  use_issues_button         : true  # Whether to add an "open an issue" button
+  # use_edit_page_button      : false
+  # use_repository_button     : true
+  # use_issues_button         : true
   use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
   extra_footer              : ""  # Will be displayed underneath the footer.
   google_analytics_id       : ""  # A GA id that can be used to track book views.
-  home_page_in_navbar       : false
+  # home_page_in_navbar       : false
   baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   analytics:
     plausible_analytics_url: https://plausible.io/js/script.js
@@ -81,10 +81,10 @@ launch_buttons:
   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
   colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
 
-repository:
-  url                       : https://github.com/MatthewSteen/USA-Politics
-  path_to_book              : ""  # A path to your book's folder, relative to the repository root.
-  branch                    : main
+# repository:
+  # url                       : https://github.com/executablebooks/jupyter-book  # The URL to your book's repository
+  # path_to_book              : ""  # A path to your book's folder, relative to the repository root.
+  # branch                    : master  # Which branch of the repository should be used when creating links
 
 #######################################################################################
 # Advanced and power-user settings
@@ -94,4 +94,9 @@ sphinx:
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
   config                    :
     html_theme_options:
+      repository_url: https://github.com/MatthewSteen/USA-Politics
+      use_issues_button: true
       use_download_button: false
+      use_repository_button: true
+      use_edit_page_button: false
+      home_page_in_toc: false
