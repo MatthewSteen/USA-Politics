@@ -7,12 +7,12 @@
 
 #######################################################################################
 # Book settings
-title                       : My Jupyter Book  # The title of the book. Will be placed in the left navbar.
-author                      : The Jupyter Book community  # The author of the book
-copyright                   : "2023"  # Copyright year to be placed in the footer
+title                       : USA Politics
+author                      : Matthew Steen
+copyright                   : "2024"
 logo                        : ""  # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+exclude_patterns            : [.venv, _build, "**.ipynb_checkpoints"]
 # Auto-exclude files not in the toc
 only_build_toc_files        : false
 
@@ -51,12 +51,12 @@ parse:
 html:
   favicon                   : ""  # A path to a favicon image
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  use_repository_button     : false  # Whether to add a link to your repository button
+  use_repository_button     : true
   use_issues_button         : false  # Whether to add an "open an issue" button
   use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
   extra_footer              : ""  # Will be displayed underneath the footer.
   google_analytics_id       : ""  # A GA id that can be used to track book views.
-  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  home_page_in_navbar       : false
   baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   analytics:
     plausible_analytics_url: https://plausible.io/js/script.js
@@ -82,9 +82,9 @@ launch_buttons:
   colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
 
 repository:
-  url                       : https://github.com/executablebooks/jupyter-book  # The URL to your book's repository
+  url                       : https://matthewsteen.github.io/USA-Politics/
   path_to_book              : ""  # A path to your book's folder, relative to the repository root.
-  branch                    : master  # Which branch of the repository should be used when creating links
+  branch                    : main
 
 #######################################################################################
 # Advanced and power-user settings
@@ -92,4 +92,11 @@ sphinx:
   extra_extensions          :   # A list of extra extensions to load by Sphinx (added to those already used by JB).
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
-  config                    :   # key-value pairs to directly over-ride the Sphinx configuration
+  config                    :
+    html_theme_options:
+      # repository_url: https://example.com/thing
+      use_issues_button: false
+      use_download_button: false
+      use_repository_button: true
+      use_edit_page_button: false
+      # home_page_in_toc: true
