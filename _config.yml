@@ -93,10 +93,3 @@ sphinx:
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
   config                    :
-    html_theme_options:
-      # repository_url: https://example.com/thing
-      use_issues_button: false
-      use_download_button: false
-      use_repository_button: true
-      use_edit_page_button: false
-      # home_page_in_toc: true
