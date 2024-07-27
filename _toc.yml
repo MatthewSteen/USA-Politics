@@ -7,3 +7,4 @@ parts:
 - caption: Energy
   chapters:
   - file: energy/independence/energy_independence.ipynb
+  - file: energy/nonrenewable/drilling_permits.ipynb
